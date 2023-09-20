@@ -40,6 +40,7 @@
       score.wins = 0;
       score.losses = 0;
       score.ties = 0;
+      localStorage.removeItem('score'); 
       ">
         Reset Score
       </button>
@@ -51,12 +52,14 @@
     </div>
 
     <script>
-        const score = {
-          wins : 0 ,
-          losses : 0 ,
-          ties : 0
-      
-        };
+        const score = JSON.parse(localStorage.getItem('score')) ||{
+            wins: 0,
+            losses: 0,
+            ties: 0
+          } ;
+
+          
+       
 
 
       function playGame(playerMove) {
@@ -97,6 +100,7 @@
         }else if (result === 'Tie.') {
           score.ties += 1;
         }
+        localStorage.setItem('score', JSON.stringify(score));
         
         alert(
           `You picked ${playerMove}. Computer picked ${computerMove}. ${result}
@@ -139,6 +143,15 @@ wins: ${score.wins},losses: ${score.losses}, ties: ${score.ties}
     //   document.title = 'Some other title';
      
     
+
+
+
+    // const product1 = {
+    //   name: 'Basketball',
+    //   price: 2095
+    // };
+    // product1.price += 500  
+    // console.log(product1);
      
 
     </script>
