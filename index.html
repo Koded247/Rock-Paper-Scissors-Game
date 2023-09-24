@@ -29,12 +29,14 @@
               playGame ('scissors');
             ">scissors
       </button>
+      <p class="js-score"></p>
 
       <button onclick="
       score.wins = 0;
       score.losses = 0;
       score.ties = 0;
-      localStorage.removeItem('score'); 
+      localStorage.removeItem('score');
+      updateScoreElement();
       ">
         Reset Score
       </button>
@@ -42,7 +44,7 @@
      
     </div>
 
-    <script src="script.js">
+    <script src="index.js">
      
 
 
