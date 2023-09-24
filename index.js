@@ -50,10 +50,9 @@ localStorage.setItem('score', JSON.stringify(score));
 
  updateScoreElement();
 
-alert(
-`You picked ${playerMove}. Computer picked ${computerMove}. ${result}
-wins: ${score.wins},losses: ${score.losses}, ties: ${score.ties}
-`);
+ document.querySelector('.js-result').innerHTML = result;
+
+ document.querySelector('.js-moves').innerHTML = `You ${playerMove} - ${computerMove} computer`;
 }
 
 function updateScoreElement() {
