@@ -8,32 +8,33 @@
   </head>
   <body>
     <div class="container">
-      <h1>Rock Paper Scissors </h1> 
-      <strong><em>(simple html,css & javascript Game)</em></strong> <br>
+      <h1>Rock Paper Scissors </h1>
       
 
       <button
         onclick="
         playGame ('rock')
           
-      "><img src="img/rock.jpg" alt=""></button>
+      " class="move-button"><img src="img/rock-emoji.png" alt="" class="move-icon"></button>
 
       <button
         onclick="
           playGame ('paper')
               
-        "><img src="img/paper.png" alt="" ></button>
+        " class="move-button"><img src="img/paper-emoji.png" alt="" class="move-icon" ></button>
 
       <button
         onclick="
               playGame ('scissors');
-            "><img src="img/scissors.jpg" alt="">
+            " class="move-button"><img src="img/scissors-emoji.png" alt="" class="move-icon">
       </button>
-      <p class="js-result"></p>
+      <p class="js-result result" ></p>
       
-      <p class="js-moves"></p>
+      <p class="js-moves">
+      
+      </p>
 
-      <p class="js-score"></p>
+      <p class="js-score score"></p>
 
       <button onclick="
       score.wins = 0;
@@ -41,7 +42,7 @@
       score.ties = 0;
       localStorage.removeItem('score');
       updateScoreElement();
-      ">
+      " class="reset-score-botton">
         Reset Score
       </button>
 

@@ -12,7 +12,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: whitesmoke;
+  background-color: black;
+  color: white;
   
 }
 /* .container {
@@ -32,21 +33,38 @@ padding: 10px;
 
 h1 {
   text-align: center;
+  margin-bottom: 30px;
 }
-img{
-  height: 60px;
-  /* background: transparent; */
-}
-
-button{
- 
+.move-icon{
+  height: 50px;
   
+   
 }
-/* button{
-  padding:10px 60px;
-  border-radius: 50px;
-  border: 5px double rgb(255, 85, 0);
+.move-button {
+  background-color: transparent;
+  width: 120px;
+  height: 120px;
+  border: 2px solid white;
+  border-radius: 60px;
+  padding: 10px;
+  margin-right: 10px;
   cursor: pointer;
-  box-shadow: 1px 5px 5px 3px;
-  background-color: rgba(255, 217, 0, 0.642);
-} */
+   
+
+
+}
+.result {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+.score {
+  margin-top: 60px;
+}
+.reset-score-botton {
+background-color: white;
+border: none ;
+font-size: 16px;
+padding: 8px 15px;
+cursor: pointer;
+}
