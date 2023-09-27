@@ -12,24 +12,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color:black;
   color: white;
   
 }
-/* .container {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-background-color: aqua;
-width: 600px;
-height: 600px;
-gap: 10px;
-border-radius: 20px;
-box-shadow: 1px 1px 20px 5px;
-padding: 10px;
- 
-} */
+.container{
+  background-color: rgb(55, 67, 80);
+  padding: 40px;
+  border-radius: 10px;
+
+}
+
 
 h1 {
   text-align: center;
@@ -60,6 +53,7 @@ h1 {
 }
 .score {
   margin-top: 60px;
+  margin-bottom: 40px;
 }
 .reset-score-botton {
 background-color: white;
@@ -67,4 +61,5 @@ border: none ;
 font-size: 16px;
 padding: 8px 15px;
 cursor: pointer;
+border-radius: 10px;
 }
