@@ -40,7 +40,7 @@ if (computerMove === "rock") {
 }
 
 if (result === 'You win.') {
-score.wins += 1;
+  score.wins += 1;
 } else if (result === 'You lose.'){
 score.losses += 1;
 }else if (result === 'Tie.') {
