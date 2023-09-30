@@ -7,7 +7,6 @@ const score = JSON.parse(localStorage.getItem('score')) ||{
 updateScoreElement();
 
 
-
 function playGame(playerMove) {
 const computerMove = pickComputerMove();
 
@@ -67,6 +66,7 @@ function pickComputerMove() {
 const randomNumber = Math.random();
 
 let computerMove = "";
+
 
 if (randomNumber >= 0 && randomNumber < 1 / 3) {
 computerMove = "rock";
